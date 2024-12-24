@@ -5,6 +5,6 @@
       location = "group:Venus.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:../build/macos/Multiverse.xcodeproj">
+      location = "group:Quark.xcodeproj">
    </FileRef>
 </Workspace>
