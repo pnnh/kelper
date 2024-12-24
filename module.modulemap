@@ -1,0 +1,6 @@
+module MTKepler {
+	header "kepler/logger/logger.h"
+	header "quark/services/logger/logger.h"
+
+    export *
+}

@@ -4,15 +4,15 @@ public class FilesystemHandler {
     // 选择单个文件夹
     public static func chooseDirectory() throws -> String? {
 
-        let openPanel = NSOpenPanel()
-        openPanel.allowsMultipleSelection = false
-        openPanel.canChooseDirectories = true
-        openPanel.canChooseFiles = false
-        if openPanel.runModal() == .OK, openPanel.urls.count > 0 {
-            let selectedPath = openPanel.urls[0].path
-            try saveBookmark(target: selectedPath)
-            return selectedPath
-        }
+//        let openPanel = NSOpenPanel()
+//        openPanel.allowsMultipleSelection = false
+//        openPanel.canChooseDirectories = true
+//        openPanel.canChooseFiles = false
+//        if openPanel.runModal() == .OK, openPanel.urls.count > 0 {
+//            let selectedPath = openPanel.urls[0].path
+//            try saveBookmark(target: selectedPath)
+//            return selectedPath
+//        }
         return nil
     }
 

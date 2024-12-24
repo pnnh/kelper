@@ -1,16 +1,14 @@
 cmake_minimum_required(VERSION 3.28...3.31)
 
-project(Proxima VERSION 0.1.0 LANGUAGES C CXX)
+project(Kepler VERSION 0.1.0 LANGUAGES C CXX)
 
-if (APPLE)
-    enable_language(OBJCXX Swift)
-endif ()
+enable_language(OBJC OBJCXX Swift)
 
 # 设置语言标准
-set(CMAKE_C_STANDARD 20)
-set(CMAKE_C_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_C_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_C_STANDARD_REQUIRED ON)
 
 # 设置开启显示详细的构建过程
 set(CMAKE_VERBOSE_MAKEFILE ON)
@@ -33,3 +31,11 @@ set(Boost_USE_STATIC_LIBS ON)
 set(Boost_USE_MULTITHREADED ON)
 
 add_subdirectory(quark)
+
+file(GLOB_RECURSE KEPLER_SOURCES
+        kepler/*.cpp)
+
+add_library(MTKepler kepler/logger/logger.cpp kepler/logger/logger.h module.modulemap)
+
+add_dependencies(MTKepler MTQuark)
+target_link_libraries(MTKepler PUBLIC MTQuark)

@@ -1,9 +1,9 @@
 import Cocoa
 import SwiftUI
-import MTQuantum
+import MTKepler
 import Logging
 
-@NSApplicationMain
+@main
 class AppDelegate: NSObject, NSApplicationDelegate {
     var window: PSMainWindow!
 
@@ -25,7 +25,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.makeKeyAndOrderFront(nil)
         
         // 尝试调用C++侧的日志打印
-        MTQuantum.quantum.Logger.LogInfo("Call From Swift")
+        MTKepler.quark.Logger.LogInfo("Call From Swift")
         
         // 尝试调用SPM里的Swift-log来打印日志
         let logger = Logger(label: "xyz.huable.venus.main")

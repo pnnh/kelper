@@ -59,18 +59,18 @@ struct ContentView: View {
                     //                           })
                     
                     
-                    let manager = FileManager.default
-                    //                       let urlForDocument = manager.urls(for: .documentDirectory, in:.userDomainMask)
-                    //                       let url = urlForDocument[0] as URL
-                    let url = promptForWorkingDirectoryPermission()
-                    print(url)
-                    
-                    if let path = url?.path {
-                        
-                        print("ssss\(  path)" )
-                        let contentsOfPath = try? manager.contentsOfDirectory(atPath: path)
-                        print("contentsOfPath: \(contentsOfPath)")
-                    }
+//                    let manager = FileManager.default
+//                    //                       let urlForDocument = manager.urls(for: .documentDirectory, in:.userDomainMask)
+//                    //                       let url = urlForDocument[0] as URL
+//                    let url = promptForWorkingDirectoryPermission()
+//                    print(url)
+//                    
+//                    if let path = url?.path {
+//                        
+//                        print("ssss\(  path)" )
+//                        let contentsOfPath = try? manager.contentsOfDirectory(atPath: path)
+//                        print("contentsOfPath: \(contentsOfPath)")
+//                    }
                     
                 }){
                     Text("open file")

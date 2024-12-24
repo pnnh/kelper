@@ -3,13 +3,13 @@ import SwiftUI
 
 
 public func showWindow(imgPath: String) {
-    var windowRef:NSWindow
-    windowRef = NSWindow(
-        contentRect: NSRect(x: 0, y: 0, width: 600, height: 600),
-        styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
-        backing: .buffered, defer: false)
-    //windowRef.contentView = NSHostingView(rootView: MyView(myWindow: windowRef, imagePath: imgPath))
-    windowRef.makeKeyAndOrderFront(nil)
+//    var windowRef:NSWindow
+//    windowRef = NSWindow(
+//        contentRect: NSRect(x: 0, y: 0, width: 600, height: 600),
+//        styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
+//        backing: .buffered, defer: false)
+//    //windowRef.contentView = NSHostingView(rootView: MyView(myWindow: windowRef, imagePath: imgPath))
+//    windowRef.makeKeyAndOrderFront(nil)
 }
 
 class PSMainWindow : NSWindow, NSWindowDelegate {
