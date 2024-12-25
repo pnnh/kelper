@@ -7,18 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45CCC881F53994BADE5FA9CE /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 45CCC81B0A89273CCE64129B /* README.md */; };
 		45CCCE220F4FF4D7D92D3115 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 45CCC8B9C25C93AA2BAC1BF9 /* .gitignore */; };
 		463412FF2CDB0F0600EE94E8 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 463412FE2CDB0F0600EE94E8 /* Logging */; };
 		4673A5352D1AC492001BF929 /* libMTKepler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4673A5342D1AC492001BF929 /* libMTKepler.a */; };
-		46EE3C17254B142000EC17BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EE3C16254B142000EC17BB /* AppDelegate.swift */; };
+		46EE3C17254B142000EC17BB /* KeplerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EE3C16254B142000EC17BB /* KeplerApp.swift */; };
 		46EE3C1B254B142200EC17BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46EE3C1A254B142200EC17BB /* Assets.xcassets */; };
 		46EE3C1E254B142200EC17BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46EE3C1D254B142200EC17BB /* Preview Assets.xcassets */; };
 		46EE3C21254B142200EC17BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46EE3C1F254B142200EC17BB /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		45CCC81B0A89273CCE64129B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		45CCC8B9C25C93AA2BAC1BF9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		4633F6C12D02E0B90009FE83 /* libMTMacos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMTMacos.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4633F7232D02FC310009FE83 /* libMTQuantum.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMTQuantum.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,13 +25,13 @@
 		4673A5302D1ABD9F001BF929 /* libMTKepler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMTKepler.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4673A5322D1ABDA1001BF929 /* libMTQuark.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMTQuark.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4673A5342D1AC492001BF929 /* libMTKepler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMTKepler.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4673A56F2D1BE5A3001BF929 /* Venus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Venus.entitlements; sourceTree = "<group>"; };
 		46EE3C13254B142000EC17BB /* Venus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Venus.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		46EE3C16254B142000EC17BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46EE3C16254B142000EC17BB /* KeplerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeplerApp.swift; sourceTree = "<group>"; };
 		46EE3C1A254B142200EC17BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46EE3C1D254B142200EC17BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		46EE3C20254B142200EC17BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46EE3C22254B142200EC17BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		46EE3C23254B142200EC17BB /* Venus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Venus.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -41,6 +39,7 @@
 		463413042CDB13BB00EE94E8 /* Services */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Services; sourceTree = "<group>"; };
 		4634130C2CDB15E700EE94E8 /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
 		4634130D2CDB15F500EE94E8 /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
+		4673A5702D1BE6C4001BF929 /* Router */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Router; sourceTree = "<group>"; };
 		46CB5C122CEB718D00525A0C /* Assets */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Assets; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
@@ -77,7 +76,6 @@
 				46EE3C15254B142000EC17BB /* Venus */,
 				46EE3C14254B142000EC17BB /* Products */,
 				45CCC8B9C25C93AA2BAC1BF9 /* .gitignore */,
-				45CCC81B0A89273CCE64129B /* README.md */,
 				37508AEFE740CC69BDAB8CAC /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -93,16 +91,17 @@
 		46EE3C15254B142000EC17BB /* Venus */ = {
 			isa = PBXGroup;
 			children = (
+				4673A5702D1BE6C4001BF929 /* Router */,
+				4673A56F2D1BE5A3001BF929 /* Venus.entitlements */,
 				46CB5C122CEB718D00525A0C /* Assets */,
 				4634130D2CDB15F500EE94E8 /* Views */,
 				4634130C2CDB15E700EE94E8 /* Models */,
 				463413042CDB13BB00EE94E8 /* Services */,
 				463413002CDB120F00EE94E8 /* Windows */,
-				46EE3C16254B142000EC17BB /* AppDelegate.swift */,
+				46EE3C16254B142000EC17BB /* KeplerApp.swift */,
 				46EE3C1A254B142200EC17BB /* Assets.xcassets */,
 				46EE3C1F254B142200EC17BB /* Main.storyboard */,
 				46EE3C22254B142200EC17BB /* Info.plist */,
-				46EE3C23254B142200EC17BB /* Venus.entitlements */,
 				46EE3C1C254B142200EC17BB /* Preview Content */,
 			);
 			path = Venus;
@@ -137,6 +136,7 @@
 				463413042CDB13BB00EE94E8 /* Services */,
 				4634130C2CDB15E700EE94E8 /* Models */,
 				4634130D2CDB15F500EE94E8 /* Views */,
+				4673A5702D1BE6C4001BF929 /* Router */,
 				46CB5C122CEB718D00525A0C /* Assets */,
 			);
 			name = Venus;
@@ -227,8 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EE3C17254B142000EC17BB /* AppDelegate.swift in Sources */,
-				45CCC881F53994BADE5FA9CE /* README.md in Sources */,
+				46EE3C17254B142000EC17BB /* KeplerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
