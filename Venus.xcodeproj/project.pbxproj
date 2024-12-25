@@ -10,7 +10,6 @@
 		45CCC881F53994BADE5FA9CE /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 45CCC81B0A89273CCE64129B /* README.md */; };
 		45CCCE220F4FF4D7D92D3115 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 45CCC8B9C25C93AA2BAC1BF9 /* .gitignore */; };
 		463412FF2CDB0F0600EE94E8 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 463412FE2CDB0F0600EE94E8 /* Logging */; };
-		4673A5332D1ABDA1001BF929 /* libMTQuark.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4673A5322D1ABDA1001BF929 /* libMTQuark.a */; };
 		4673A5352D1AC492001BF929 /* libMTKepler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4673A5342D1AC492001BF929 /* libMTKepler.a */; };
 		46EE3C17254B142000EC17BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EE3C16254B142000EC17BB /* AppDelegate.swift */; };
 		46EE3C1B254B142200EC17BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46EE3C1A254B142200EC17BB /* Assets.xcassets */; };
@@ -50,7 +49,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4673A5332D1ABDA1001BF929 /* libMTQuark.a in Frameworks */,
 				4673A5352D1AC492001BF929 /* libMTKepler.a in Frameworks */,
 				463412FF2CDB0F0600EE94E8 /* Logging in Frameworks */,
 			);
@@ -400,7 +398,6 @@
 					"@loader_path/Frameworks",
 					"\"$(SRCROOT)/build/macos/Debug\"",
 					"\"$(SRCROOT)/build/macos/vcpkg_installed/arm64-osx/lib\"",
-					"\"$(SRCROOT)/build/macos/quark/Debug\"",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(inherited)\"",
@@ -408,7 +405,6 @@
 					"\"$(SRCROOT)/build/macos/vcpkg_installed/arm64-osx/lib\"",
 					"\"$(SRCROOT)/build/macos/Debug\"",
 					/usr/lib/swift,
-					"\"$(SRCROOT)/build/macos/quark/Debug\"",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				OTHER_LDFLAGS = (
@@ -455,7 +451,6 @@
 					"@loader_path/Frameworks",
 					"\"$(SRCROOT)/build/macos/Debug\"",
 					"\"$(SRCROOT)/build/macos/vcpkg_installed/arm64-osx/lib\"",
-					"\"$(SRCROOT)/build/macos/quark/Debug\"",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(inherited)\"",
@@ -463,7 +458,6 @@
 					"\"$(SRCROOT)/build/macos/vcpkg_installed/arm64-osx/lib\"",
 					"\"$(SRCROOT)/build/macos/Debug\"",
 					/usr/lib/swift,
-					"\"$(SRCROOT)/build/macos/quark/Debug\"",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				OTHER_LDFLAGS = (
