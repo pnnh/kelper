@@ -65,7 +65,7 @@ struct KeplerApp: App {
                        PSUUIDView().navigationBarBackButtonHidden(true)
                    }
                }
-           }
+           }.padding(0)
             .frame(width: 1024, height: 750)  // 高度减去标题栏
            .environmentObject(router)
         }

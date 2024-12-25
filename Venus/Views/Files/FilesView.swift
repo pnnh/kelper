@@ -21,7 +21,7 @@ struct PSFilesView: View {
           minHeight: 0,
           maxHeight: .infinity,
           alignment: .topLeading
-        )
+        ).padding(0)
         .background(Color.purple)
     }
  

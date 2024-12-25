@@ -8,7 +8,22 @@ struct PSImageView: View {
     
     
     var body: some View {
-        Text("Images")
+        VStack{
+            PSNavbarComponent()
+            
+            Button("Images Home") {
+                router.navigate(to: .home)
+            }
+            .padding(.top, 12)
+        }
+        .frame(
+          minWidth: 0,
+          maxWidth: .infinity,
+          minHeight: 0,
+          maxHeight: .infinity,
+          alignment: .topLeading
+        ).padding(0)
+        .background(Color.purple)
     }
  
 }

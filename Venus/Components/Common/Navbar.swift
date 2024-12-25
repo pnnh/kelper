@@ -17,7 +17,10 @@ struct PSNavbarComponent: View {
                         
                         router.navigate(to: .home)
                     }
-        }
+            Spacer()
+        }.padding(8).frame(height: 40, alignment: Alignment.center).background(Color(hex: 0xFAFAFA))
+            
+             
     }
  
 }
