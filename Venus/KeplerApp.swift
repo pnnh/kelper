@@ -51,13 +51,22 @@ struct KeplerApp: App {
                 PSMainView()
                .navigationDestination(for: Router.Destination.self) { destination in
                    switch destination {
+                   case .home:
+                       PSMainView().navigationBarBackButtonHidden(true)
                    case .files:
                        PSFilesView().navigationBarBackButtonHidden(true)
                    case .notes(let owner):
-                       PSNotesView(ownerName: "xxxNotes")
+                       PSNotesView(ownerName: "xxxNotes").navigationBarBackButtonHidden(true)
+                   case .images:
+                       PSImageView().navigationBarBackButtonHidden(true)
+                   case .password:
+                       PSPasswordView().navigationBarBackButtonHidden(true)
+                   case .uuid:
+                       PSUUIDView().navigationBarBackButtonHidden(true)
                    }
                }
            }
+            .frame(width: 1024, height: 750)  // 高度减去标题栏
            .environmentObject(router)
         }
         .modelContainer(sharedModelContainer)

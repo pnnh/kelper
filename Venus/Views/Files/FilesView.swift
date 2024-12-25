@@ -7,20 +7,29 @@ struct PSFilesView: View {
     @EnvironmentObject var router: Router
 
     var body: some View {
-        
-        Button("**Go to Jane's Bedroom**") {
-            router.navigate(to: .notes(owner: "Jane"))
+        VStack{
+            PSNavbarComponent()
+            
+            Button("前往笔记页面") {
+                router.navigate(to: .notes(owner: "Jane"))
+            }
+            .padding(.top, 12)
         }
-        .padding(.top, 12)
+        .frame(
+          minWidth: 0,
+          maxWidth: .infinity,
+          minHeight: 0,
+          maxHeight: .infinity,
+          alignment: .topLeading
+        )
+        .background(Color.purple)
     }
  
 }
 
 
-struct PSFilesView_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            PSMainView()
-        }
-    }
+
+#Preview {
+    PSFilesView( )
+        .modelContainer(for: Item.self, inMemory: true)
 }

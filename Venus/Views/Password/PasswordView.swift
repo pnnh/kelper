@@ -3,19 +3,17 @@ import SwiftUI
 import Combine
 import MTKepler
 
-struct PSNotesView: View {
+struct PSPasswordView: View {
     @EnvironmentObject var router: Router
-    var ownerName: String
-    
     
     var body: some View {
-        Text("\(ownerName) Notes")
+        Text(" PSPassword")
     }
  
 }
 
 
 #Preview {
-    PSNotesView(ownerName: "xxxxPreview")
+    PSPasswordView()
         .modelContainer(for: Item.self, inMemory: true)
 }
