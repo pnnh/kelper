@@ -1,35 +1,47 @@
-import Foundation
-import SwiftUI
 import Combine
+import Foundation
 import MTKepler
+import SwiftUI
 
 struct PSFilesView: View {
     @EnvironmentObject var router: Router
 
     var body: some View {
-        VStack{
+        VStack {
             PSNavbarComponent()
-            
-            Button("前往笔记页面") {
-                router.navigate(to: .notes(owner: "Jane"))
+
+            HStack {
+                PSFilesNavComponent()
             }
-            .padding(.top, 12)
         }
         .frame(
-          minWidth: 0,
-          maxWidth: .infinity,
-          minHeight: 0,
-          maxHeight: .infinity,
-          alignment: .topLeading
+            minWidth: 0,
+            maxWidth: .infinity,
+            minHeight: 0,
+            maxHeight: .infinity,
+            alignment: .topLeading
         ).padding(0)
         .background(Color.purple)
     }
- 
+
 }
 
-
+struct PSFilesNavComponent: View {
+    var body: some View {
+        VStack {
+            Text("位置")
+            HStack {
+                Text("主目录")
+            } .onTapGesture {
+//                let fileService = MTKepler.quark.FileServerBusiness("")
+//                fileService.selectFilesVector()
+                print("点击主目录")
+            }
+        }
+    }
+}
 
 #Preview {
-    PSFilesView( )
+    PSFilesView()
         .modelContainer(for: Item.self, inMemory: true)
 }

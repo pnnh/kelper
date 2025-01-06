@@ -1,7 +1,6 @@
 import Foundation
 import SwiftUI
 import Combine
-import MTKepler
 
 struct PSNavbarComponent: View {
     @EnvironmentObject var router: Router
